@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce Tabacaria</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <!-- Cabeçalho -->
@@ -21,43 +23,26 @@
         </nav>
     </header>
 
+    <h2>Produtos</h2>
     <!-- Produtos -->
     <section id="produtos">
-        <h2>Produtos</h2>
+        
         <div class="produto">
-            <img src="https://cdn.awsli.com.br/600x700/2080/2080656/produto/246651563/imagem-do-whatsapp-de-2023-12-18-as-16-02-30_0926b3c5-e1702926343872-kub0ikavn1.jpg" alt="Ignite V80">
+            <img src="https://cdn.awsli.com.br/600x700/2080/2080656/produto/246651563/imagem-do-whatsapp-de-2023-12-18-as-16-02-30_0926b3c5-e1702926343872-kub0ikavn1.jpg"
+                alt="Ignite V80">
             <h3>Ignite V80</h3>
             <p>R$ 95,00</p>
             <button class="btn-adicionar" data-nome="Ignite V80" data-preco="95">Comprar</button>
         </div>
         <div class="produto">
-            <img src="https://cdn.awsli.com.br/800x800/2441/2441681/produto/218110753/v50-black-lq8sh96h8j.jpg" alt="Ignite V50 Black Edition">
+            <img src="https://cdn.awsli.com.br/800x800/2441/2441681/produto/218110753/v50-black-lq8sh96h8j.jpg"
+                alt="Ignite V50 Black Edition">
             <h3>Ignite V50 Black Edition</h3>
             <p>R$ 80,00</p>
             <button class="btn-adicionar" data-nome="Ignite V50 Black Edition" data-preco="80">Comprar</button>
         </div>
-        <!-- Adicione mais produtos aqui -->
     </section>
-
-    <!-- Carrinho -->
-    <section id="carrinho">
-        <h2>Carrinho de Compras</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Produto</th>
-                    <th>Preço</th>
-                    <th>Quantidade</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody id="carrinho-itens">
-                <!-- Produtos adicionados aparecerão aqui -->
-            </tbody>
-        </table>
-        <p>Total: R$ <span id="carrinho-total">0,00</span></p>
-    </section>
-
     <script src="js/script.js"></script>
 </body>
+
 </html>
