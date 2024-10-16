@@ -9,6 +9,8 @@ header {
     background-color: #333;
     color: white;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-content {
@@ -19,8 +21,9 @@ header {
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
+    height: 100%; /* Ajusta a altura da logo ao tamanho da header */
+    max-height: 80px; /* Limita a altura máxima da logo */
+    width: auto; /* Mantém a proporção da imagem */
     position: absolute;
     left: 0;
 }
@@ -29,6 +32,11 @@ header {
     margin: 0;
     text-align: center;
     flex-grow: 1;
+}
+
+hr {
+    border: 1px solid #fff;
+    margin-top: 1em;
 }
 
 nav ul {
