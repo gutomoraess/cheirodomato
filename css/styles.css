@@ -9,12 +9,32 @@ header {
     background-color: #333;
     color: white;
     padding: 1em;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+}
+
+#nome {
+    margin: 0;
     text-align: center;
+    flex-grow: 1;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -99,14 +119,4 @@ td {
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
     font-style: normal;
-}
-
-#logo {
-    width: 100px;
-    height: 100px;
-    text-align: left;
-}
-
-#nome {
-    text-align: center;
 }
