@@ -9,8 +9,7 @@ header {
     background-color: #333;
     color: white;
     padding: 1em;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 .header-content {
@@ -21,22 +20,19 @@ header {
 }
 
 #logo {
-    height: 100%; /* Ajusta a altura da logo ao tamanho da header */
-    max-height: 80px; /* Limita a altura máxima da logo */
-    width: auto; /* Mantém a proporção da imagem */
+    width: 100px;
+    height: 100px;
     position: absolute;
     left: 0;
+    margin-top: 10px; /* Desce um pouco a imagem */
+    border-radius: 50%; /* Transforma a imagem em redonda */
+    object-fit: cover; /* Ajusta o conteúdo da imagem para caber dentro da área redonda */
 }
 
 #nome {
     margin: 0;
     text-align: center;
     flex-grow: 1;
-}
-
-hr {
-    border: 1px solid #fff;
-    margin-top: 1em;
 }
 
 nav ul {
