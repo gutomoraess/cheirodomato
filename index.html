@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Tabacaria</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Tabacaria Exclusiva</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Produtos -->
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div class="produto">
+            <img src="https://via.placeholder.com/150" alt="Produto 1">
+            <h3>Charuto Premium</h3>
+            <p>R$ 50,00</p>
+            <button class="btn-adicionar" data-nome="Charuto Premium" data-preco="50">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="https://via.placeholder.com/150" alt="Produto 2">
+            <h3>Isqueiro Clássico</h3>
+            <p>R$ 20,00</p>
+            <button class="btn-adicionar" data-nome="Isqueiro Clássico" data-preco="20">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais produtos aqui -->
+    </section>
+
+    <!-- Carrinho -->
+    <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="carrinho-itens">
+                <!-- Produtos adicionados aparecerão aqui -->
+            </tbody>
+        </table>
+        <p>Total: R$ <span id="carrinho-total">0,00</span></p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
